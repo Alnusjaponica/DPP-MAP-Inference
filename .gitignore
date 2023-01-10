@@ -1,0 +1,6 @@
+.DS_Store
+.vscode
+cpp/build
+cpp/data
+python/lazy_dpp
+vcpkg/
