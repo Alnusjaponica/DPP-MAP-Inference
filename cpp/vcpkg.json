@@ -1,0 +1,36 @@
+{
+    "name": "lazy-dpp",
+    "version": "1.0.0",
+    "dependencies": [
+        "boost-math",
+        "boost-program-options",
+        "boost-random",
+        "gtest",
+        "eigen3"
+    ],
+    "overrides": [
+        {
+            "name": "boost-math",
+            "version": "1.79.0"
+        },
+        {
+            "name": "boost-program-options",
+            "version": "1.79.0"
+        },
+        {
+            "name": "boost-random",
+            "version": "1.79.0"
+        },
+        {
+            "name": "gtest",
+            "version": "1.11.0",
+            "port-version": 5
+        },
+        {
+            "name": "eigen3",
+            "version": "3.4.0",
+            "port-version": 2
+        }
+    ],
+    "builtin-baseline": "b98afc9f1192becb2f447cee485ce36ba111f9f6"
+}

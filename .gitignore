@@ -2,5 +2,6 @@
 .vscode
 cpp/build
 cpp/data
-python/lazy_dpp
+cpp/result
+cpp/vcpkg_installed
 vcpkg/
