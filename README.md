@@ -15,6 +15,13 @@ This code is the official implementation of [Lazy and Fast Greedy MAP Inference 
 
 ## Compile
 
+When first cloning this repository, navigate to the `vcpkg/` directory and run the following command:
+
+```sh
+git submodule init
+git submodule update
+```
+
 To compile C++ codes, run:
 
 ```sh
