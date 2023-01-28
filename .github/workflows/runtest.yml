@@ -1,0 +1,29 @@
+name: RunTest
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+env:
+  BUILD_TYPE: release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup
+        run: git submodule init && git submodule update
+
+      - name: Configure CMake
+        run: cmake --preset make
+
+      - name: Build
+        run: cmake --build --preset ${{env.BUILD_TYPE}}
+
+      - name: Test
+        run: ./build/runtest
