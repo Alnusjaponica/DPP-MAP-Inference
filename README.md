@@ -65,7 +65,7 @@ For pre-processing, run the following command on `python/`.
 ```sh
 mkdir -p data
 unzip data/archive.zip -d data/netflix_raw
-./build/pre_process -d netflix 
+./build/pre_process -d netflix
 ```
 
 #### Computing Product Matrices
