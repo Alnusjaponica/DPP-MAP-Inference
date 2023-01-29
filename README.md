@@ -60,7 +60,7 @@ unzip data/ml-25m.zip -d data
 
 To get Netflix Prize dataset, you need a Kaggle account.
 Logging to Kaggle, download `archive.zip` from [here](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data) and store it to `data/`.
-For pre-processing, run the following command on `python/`.
+For pre-processing, run the following commands.
 
 ```sh
 mkdir -p data
