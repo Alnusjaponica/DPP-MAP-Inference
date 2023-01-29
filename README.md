@@ -4,12 +4,12 @@ This code is the official implementation of [Lazy and Fast Greedy MAP Inference 
 
 ## Requirements
 
-- [CMake](https://cmake.org/) (version 3.23 or later)
+- [CMake](https://cmake.org/) (version ≧ 3.23)
+- [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
 - [GNU Make](https://www.gnu.org/software/make/) or [Ninja](https://ninja-build.org/)
 - C++ Compiler ([GNU Compiler Collection](https://gcc.gnu.org/) (GCC) / [Clang](https://clang.llvm.org/) / ...) compatible to C++17
   - GCC: version 7.1 or later
   - Clang: version 5.0 or later
-- [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
 
 ## Compile
 
@@ -23,18 +23,18 @@ git submodule update
 To compile C++ codes, run:
 
 ```sh
-cmake --preset make
+cmake --preset make  # replace "make" with "ninja" if you use Ninja
 cmake --build --preset release
 ```
 
 ## Data Preprocessing
 
 To generate the input data used in the experiment, follow these steps.
-The resulting data will be stored to `cpp/data/`.
+The resulting data will be stored to `data/`.
 
 ### Synthetic Datasets
 
-To generate synthetic data, run the following on `cpp/`:
+To generate synthetic data, run the following:
 
 ```sh
 ./build/gen_wishart
@@ -47,7 +47,7 @@ Please follow these steps:
 
 #### MovieLens 25M
 
-To get the primary data of MovieLens 25M dataset, run the following command on `cpp/`:
+To get the primary data of MovieLens 25M dataset, run the following :
 
 ```sh
 mkdir -p data
@@ -59,7 +59,7 @@ unzip data/ml-25m.zip -d data
 #### Netflix Prize
 
 To get Netflix Prize dataset, you need a Kaggle account.
-Logging to Kaggle, download `archive.zip` from [here](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data) and store it to `cpp/data/`.
+Logging to Kaggle, download `archive.zip` from [here](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data) and store it to `data/`.
 For pre-processing, run the following command on `python/`.
 
 ```sh
