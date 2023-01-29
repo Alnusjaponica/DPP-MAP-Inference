@@ -12,7 +12,7 @@ project(lazydpp
     LANGUAGES CXX
 )
 
-find_package(Boost 1.78 REQUIRED program_options)
+find_package(Boost 1.81 REQUIRED program_options)
 find_package(Eigen3 3.4 CONFIG REQUIRED)
 
 if(ENABLE_OPENMP)
