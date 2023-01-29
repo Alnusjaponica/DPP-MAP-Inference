@@ -47,7 +47,7 @@ Please follow these steps:
 
 #### MovieLens 25M
 
-To get the primary data of MovieLens 25M dataset, run the following :
+To get the primary data of MovieLens 25M dataset, run the following commands:
 
 ```sh
 mkdir -p data
