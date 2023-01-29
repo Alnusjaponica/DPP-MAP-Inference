@@ -5,17 +5,15 @@ This code is the official implementation of [Lazy and Fast Greedy MAP Inference 
 ## Requirements
 
 - [CMake](https://cmake.org/) (version 3.23 or later)
-- [GNU Make](https://www.gnu.org/software/make/)
+- [GNU Make](https://www.gnu.org/software/make/) or [Ninja](https://ninja-build.org/)
 - C++ Compiler ([GNU Compiler Collection](https://gcc.gnu.org/) (GCC) / [Clang](https://clang.llvm.org/) / ...) compatible to C++17
   - GCC: version 7.1 or later
   - Clang: version 5.0 or later
-- [Eigen](https://eigen.tuxfamily.org/) (version 3.4.0 or later)
-- [Boost](https://boost.org/) (version 1.78.0 or later)
-- [GoogleTest](https://github.com/google/googletest) (version 1.11.0 or later)
+- [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
 
 ## Compile
 
-When first cloning this repository, navigate to the `vcpkg/` directory and run the following command:
+When first cloning this repository, run the following commands:
 
 ```sh
 git submodule init
@@ -25,7 +23,6 @@ git submodule update
 To compile C++ codes, run:
 
 ```sh
-cd cpp
 cmake --preset make
 cmake --build --preset release
 ```

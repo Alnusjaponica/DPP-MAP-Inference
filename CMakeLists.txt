@@ -1,21 +1,19 @@
 cmake_minimum_required(VERSION 3.23)
 
 set(CMAKE_TOOLCHAIN_FILE
-    ${CMAKE_CURRENT_SOURCE_DIR}/../vcpkg/scripts/buildsystems/vcpkg.cmake
+    ${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake
     CACHE STRING "Vcpkg toolchain file"
 )
 
 project(lazydpp
     VERSION 1.0
     DESCRIPTION "The official implementation of \"Lazy and Fast Greedy MAP Inference for Determinantal Point Process\""
-
-    # HOMEPAGE_URL "https://github.com/"
+    HOMEPAGE_URL "https://github.com/Alnusjaponica/DPP-MAP-Inference"
     LANGUAGES CXX
 )
 
 find_package(Boost 1.78 REQUIRED program_options)
 find_package(Eigen3 3.4 CONFIG REQUIRED)
-find_package(OpenCV REQUIRED)
 
 if(ENABLE_OPENMP)
     find_package(OpenMP REQUIRED)

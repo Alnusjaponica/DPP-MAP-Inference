@@ -1,6 +1,7 @@
 .DS_Store
 .vscode
-cpp/build
-cpp/data
-cpp/result
-cpp/vcpkg_installed
+
+build/
+data/
+result/
+vcpkg_installed/
