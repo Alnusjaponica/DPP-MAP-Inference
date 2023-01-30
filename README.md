@@ -1,4 +1,6 @@
 # Lazy and Fast Greedy MAP Inference for Determinantal Point Process
+[![RunTest](https://github.com/Alnusjaponica/DPP-MAP-Inference/actions/workflows/runtest.yml/badge.svg)](https://github.com/Alnusjaponica/DPP-MAP-Inference/actions/workflows/runtest.yml)
+![GitHub](https://img.shields.io/github/license/Alnusjaponica/dpp-map-inference)
 
 This code is the official implementation of [Lazy and Fast Greedy MAP Inference for Determinantal Point Process](https://arxiv.org/abs/2206.05947).
 
